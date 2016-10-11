@@ -6,15 +6,14 @@
     "experimentalDecorators": true,
     "sourceMap": true,
     "suppressImplicitAnyIndexErrors":true,
-    "outDir": "build",
-    "outFile": "build/all.js",
+    "outDir": "js",
     "declaration": true
   },
   "compileOnSave": true,
   "buildOnSave": true,
   "exclude": [
     "node_modules",
-    "build"
+    "js"
   ],
   
   "filesGlob": [
