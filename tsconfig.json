@@ -5,18 +5,23 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "sourceMap": true,
-    "suppressImplicitAnyIndexErrors":true
+    "suppressImplicitAnyIndexErrors":true,
+    "outDir": "build",
+    "outFile": "build/all.js",
+    "declaration": true
   },
-  "compileOnSave": false,
-  "buildOnSave": false,
+  "compileOnSave": true,
+  "buildOnSave": true,
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "build"
   ],
+  
   "filesGlob": [
     "app/**/*.ts",
     "typings/index.d.ts"
   ],
   "atom": {
-    "rewriteTsconfig": false
+    "rewriteTsconfig": true
   }
 }
