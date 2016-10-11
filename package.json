@@ -7,7 +7,9 @@
     "url": "https://github.com/onehungrymind/fem-ng2-simple-app/"
   },
   "scripts": {
-    "start": "webpack-dev-server --inline --colors --watch --display-error-details --display-cached  --port 3001 --hot",
+  	"tsc": "tsc",
+    "tsc:w": "tsc -w --outDir build",
+    "start": "\"webpack-dev-server --inline --colors --watch --display-error-details --display-cached  --port 3001 --hot\"",
     "test": "karma start"
   },
   "dependencies": {
@@ -37,8 +39,11 @@
     "phantomjs-prebuilt": "^2.1.7",
     "raw-loader": "^0.5.1",
     "source-map-loader": "^0.1.5",
-    "typescript": "^1.8.10",
     "webpack": "^1.13.0",
-    "webpack-dev-server": "^1.14.1"
+    "webpack-dev-server": "^1.14.1",
+    "concurrently": "^3.0.0",
+    "lite-server": "^2.2.2",
+    "typings":"^1.4.0",
+    "typescript": "^2.0.3"
   }
 }
